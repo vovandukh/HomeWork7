@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="cOntainer">
+        <div class="signUpWrapper">
+            <h1>Please sign up</h1>
+            <form name="f1">
+                <div class="mb-3">
+                    <input type="text" class="form-control form form1" name="firstName" placeholder="First Name">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control form form1" name="lastName" placeholder="Last Name">
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control form emailForm form " name="email"
+                        placeholder="Email address" style="margin:  40px 0 5px;">
+                    <div class="modalCheckEmail">This email already exist</div>
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control form form1" name="password" placeholder="Password"
+                        style="margin:  0;">
+                </div>
+            </form>
+            <button type="submit" class="btn btn-primary btn-signUp">Sign up</button>
+            <a href="#" class="link-primary linkSignin">Sing in now</a>
+        </div>
+        <div class="SignInWrapper">
+            <form name="f2">
+                <h1>Please sign in</h1>
+                <div class="mb-3">
+                    <input type="email" class="form-control " name="email" placeholder="Email address">
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control " name="password" placeholder="password">
+                </div>
+                <div class="modalCheckLoginOrPassword">Incorrect email or password</div>
+            </form>
+            <button type="submit" class="btn btn-success btn-signIn">Sign in</button>
+            <a href="#" class="link-primary linkSignup">Sing up now</a>
+        </div>
+        <div class="profileWrapper">
+            <div class="profile">
+                <div class="profileAvatar"></div>
+                <div class="profleInfo">
+                    <h1 class="sName" style="color: black;"></h1>
+                    <h2 class="eMail"></h2>
+                    <h2 class="position">Designer & Web Developing</h2>
+                </div>
+                <button type="submit" class="btn btn-success btnSignUp" style="width: 90%;">Sign up</button>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
